@@ -59,8 +59,9 @@ while True:
         molality = float(input("몰랄농도를 넣어주세요:"))
         molarmass = float(input("몰질량을 넣어주세요:"))
         def 몰랄_몰_변환(density, molality, molarmass):
-            molarity = (1000*density*molarity)/(1000+molarity*molarmass)
+            molarity = (1000*density*molality)/(1000+molality*molarmass)
             return molarity
+        result = 몰랄_몰_변환(density, molality, molarmass)
         print(f"molarity(몰농도)={result:.3f}M")
     elif choice == "0":
         print("계산기를 종료합니다")
