@@ -32,7 +32,7 @@ while True:
         percent = float(input("질량 퍼센트를 넣으세요:"))
         molarmass = float(input("몰질량을 넣으세요:"))
         def 퍼센트_몰랄_변환(percent, molarmass):
-            molality = percent*1000/molarmass(100-percent)
+            molality = percent*1000/molarmass*(100-percent)
             return molality
         result = 퍼센트_몰랄_변환(percent, molarmass)
         print(f"m(몰랄농도)={result:.3f}m")
