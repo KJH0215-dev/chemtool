@@ -51,4 +51,5 @@ while True:
 
     
     elif choice == "0":
+        print("계산기를 종료합니다.")
         break
